@@ -3,11 +3,11 @@ import { Text, StyleSheet, View, TouchableOpacity } from 'react-native'
 
 
 function Tasks(props) {
+    console.log(props.id,props.text)
     return (
         <View style={styles.item}>
             <View style={styles.itemLeft}>
                 <View style={styles.square}>
-
                 </View>
                 <Text style={styles.itemText}>
                 {props.text}
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         alignItems:'center',
         justifyContent:'space-between',
-        margin:20
+        margin:10
     },
     itemLeft:{
         flexDirection:'row',
